@@ -1,0 +1,90 @@
+{
+  "source": "https://github.com/vexus-debug/healthsync-hub-1688a703.git",
+  "scope": "Import repository source as-is and install dependencies; no tests or manual validation requested.",
+  "capabilities": [
+    {
+      "capability": "application code",
+      "source": "GitHub repository working tree",
+      "outcome": "Repository source and assets copied as supplied; dependencies installed from bun.lock. Project Git and Lovable metadata were preserved; .env was excluded.",
+      "status": "imported",
+      "next_action": "None for the requested import."
+    },
+    {
+      "capability": "schema",
+      "source": "Supabase SQL migrations in supabase/migrations/",
+      "outcome": "Migration files copied unchanged; they were not applied.",
+      "status": "included_not_applied",
+      "next_action": "Apply only if requested."
+    },
+    {
+      "capability": "records",
+      "source": "No record export included in the repository.",
+      "outcome": "Existing database records are not part of this code import.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "authentication and user identities",
+      "source": "Supabase-related application source; no user export included.",
+      "outcome": "Authentication code will be copied unchanged; user identities are not imported.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "authorization",
+      "source": "Application source and Supabase migrations.",
+      "outcome": "Copied unchanged; runtime behavior is not being checked.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "uploaded file bytes",
+      "source": "Repository assets only; no external storage export supplied.",
+      "outcome": "Repository assets will be copied; external stored files are not included.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "external providers",
+      "source": "Supabase configuration and application source; environment values are excluded.",
+      "outcome": "Provider references will be preserved; the source .env will not be copied.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "public endpoints and callbacks",
+      "source": "Supabase function files in the repository.",
+      "outcome": "Source files will be copied; endpoints will not be deployed or exercised.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "webhooks and schedules",
+      "source": "Not included in the inspection manifest.",
+      "outcome": "Not changed or verified as part of source import.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "secrets",
+      "source": "Source .env file; secret values were not read.",
+      "outcome": "Excluded from the project copy for security.",
+      "status": "pending",
+      "next_action": "No action in this import-only request."
+    },
+    {
+      "capability": "cutover",
+      "source": "No production cutover requested.",
+      "outcome": "No services or domains were switched.",
+      "status": "not_requested",
+      "next_action": "None."
+    },
+    {
+      "capability": "verification",
+      "source": "User explicitly requested no tests or checks.",
+      "outcome": "No tests or manual validation will be run.",
+      "status": "not_requested",
+      "next_action": "None unless requested later."
+    }
+  ]
+}
