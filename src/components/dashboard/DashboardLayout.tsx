@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate, Link } from "@/lib/router-compat";
-import { LayoutDashboard, FileText, Clock, CheckCircle2, Users, Settings, Search, Bell, LogOut, Menu, Inbox, ShoppingBag, Pill, ListChecks, Plus, ScanLine, MessageSquare } from "lucide-react";
+import { LayoutDashboard, FileText, Clock, CheckCircle2, Users, Settings, Search, Bell, LogOut, Menu, Inbox, ShoppingBag, Pill, ListChecks, Plus, ScanLine, MessageSquare, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from "@/components/ui/command";
 import logo from "@/assets/logo.png";
@@ -33,6 +33,7 @@ const buildGroups = (isSenior: boolean, isLabAdmin: boolean) => {
     { title: "Records", items: [
       { to: "/dashboard/results", label: "Results Search", icon: Search },
       { to: "/scan-dashboard", label: "Imaging & Scans", icon: ScanLine },
+      { to: "/dashboard/accounting", label: "Accounting", icon: Wallet },
     ]},
   ];
   const manage: NavItem[] = [{ to: "/dashboard/scientists", label: "Scientists", icon: Users }];
